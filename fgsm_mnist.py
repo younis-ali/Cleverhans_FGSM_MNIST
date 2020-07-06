@@ -7,13 +7,6 @@ Original file is located at
     https://colab.research.google.com/drive/1MYOL-4cNqthpUtOaseR-zJc4c0LKobj7
 """
 
-def installPackages():
-  # install the following packages
-  print('Installing the required packages')
-  !pip install -q tensorflow-gpu==1.15
-  # Install bleeding edge version of cleverhans
-  !pip install git+https://github.com/tensorflow/cleverhans.git#egg=cleverhans
-
 def fgsmAttack():
   import cleverhans
   import tensorflow as tf
@@ -103,7 +96,6 @@ def fgsmAttack():
   plt.show()
 
 def main():
-  installPackages()
   fgsmAttack()
 
 main()
