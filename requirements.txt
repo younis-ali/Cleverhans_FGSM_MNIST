@@ -1,2 +1,2 @@
-tensorflow-gpu==1.15
+tensorflow-gpu==2.6.4
 git+https://github.com/tensorflow/cleverhans.git#egg=cleverhans
